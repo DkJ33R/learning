@@ -1,0 +1,62 @@
+// Switch
+
+// ejemplo de switch
+const value = 'Monday'
+
+switch (value) {
+  case 'Monday':
+    console.log('Today is Monday')
+    break
+  case 'Tuesday':
+    console.log('Today is Tuesday')
+    break
+  case 'Wednesday':
+    console.log('Today is Wednesday')
+    break
+  default:
+    console.log('Today is not Monday')
+}
+
+const date = new Date()
+const month = date.getMonth()
+
+switch (month) {
+  case 0:
+    console.log('January')
+    break
+  case 1:
+    console.log('February')
+    break
+  case 2:
+    console.log('March')
+    break
+  case 3:
+    console.log('April')
+    break
+  case 4:
+    console.log('May')
+    break
+  case 5:
+    console.log('June')
+    break
+  case 6:
+    console.log('July')
+    break
+  case 7:
+    console.log('August')
+    break
+  case 8:
+    console.log('September')
+    break
+  case 9:
+    console.log('October')
+    break
+  case 10:
+    console.log('November')
+    break
+  case 11:
+    console.log('December')
+    break
+  default:
+    console.log('Not a month')
+}
