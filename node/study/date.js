@@ -15,3 +15,6 @@ console.log(date2)
 // Ejemplo de como se usa la funcion Date con un numero
 const date3 = new Date(2025, 0, 1)
 console.log(date3)
+
+const date4 = new Date(2025, 0, 1, 12, 12, 12)
+console.log(date4.getHours())
