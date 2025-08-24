@@ -1,0 +1,19 @@
+-- Comentario: En SQL Server, se usa `CREATE DATABASE` para crear la base de datos,
+-- pero en SQLite la base de datos se crea automáticamente al conectarte a un archivo.
+-- En VS Code, al usar la extensión, solo necesitas crear el archivo .db.
+
+-- Comentario: La sintaxis para crear tablas es idéntica en SQLite y SQL Server.
+-- Aquí, definimos columnas con sus tipos de datos.
+
+CREATE TABLE Empleados (
+    id_empleado INTEGER PRIMARY KEY AUTOINCREMENT, -- AUTOINCREMENT es similar a IDENTITY en SQL Server
+    nombre TEXT NOT NULL,                         -- TEXT en SQLite es similar a VARCHAR en SQL Server
+    salario REAL,                                 -- REAL es el tipo para números con decimales
+    fecha_contratacion DATE                       -- DATE es para almacenar fechas
+);
+
+-- Comentario: La sintaxis de CREATE TABLE es similar en ambos motores.
+CREATE TABLE Departamentos (
+    id_departamento INTEGER PRIMARY KEY AUTOINCREMENT,
+    nombre_departamento TEXT NOT NULL
+);
